@@ -17,4 +17,5 @@ int main(int argc, char *argv[]) {
 	m = (x+y+z) / 3;
 	
 	printf("y = %d, m= %d", y, m);
+	return 0;
 }
