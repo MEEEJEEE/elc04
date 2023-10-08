@@ -3,17 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b;
+	unsigned int x;
+	int b=0;
 	
-	printf("Input two integers : ");
-	scanf("%i %i", &a, &b);
+	printf("Input a number : ");
+	scanf("%ui", &x);
 	
-	printf("%i + %i = %i \n", a, b, a+b);
-	printf("%i - %i = %i \n", a, b, a-b);
-	printf("%i * %i = %i \n", a, b, a*b);
-	printf("%i / %i = %i \n", a, b, a/b);
-	printf("%i %% %i = %i \n", a, b, a%b);
+	for (b=0; x !=0; x>>=1)
+	{
+		if (x & 1)
+		{
+			b++;
+		}
+	}
 	
-	system("PAUSE");
+	printf("The result is : %i\n", b);
 	return 0;
 }
