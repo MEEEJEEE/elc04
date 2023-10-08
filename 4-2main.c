@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 		printf("%i %% %i = %i \n", a, b, a%b);
 	} else {
 		printf("Division by zero is not allowed.\n");
+		return EXIT_FAILURE;
 	}
 	
 	system("PAUSE");
